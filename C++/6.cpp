@@ -15,6 +15,8 @@ static bool cmp(int x, int y){
 }
 int main(){
     vector<int> v{10,5,9,12,32,6,4,1,14,7};
-    for(auto i:v)
-    cout<<i<<" ";
+    sort(v.begin(),v.end(),cmp);
+    for(auto x:v)
+    cout<<x<<" ";
+    return 0;
 }
