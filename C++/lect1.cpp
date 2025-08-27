@@ -32,8 +32,8 @@
 using namespace std;
 static bool cmp(int x, int y)
 {
-    if(x<y) return true;
-    if(x>y) return false;
+    if(x*x<y*y) return true;
+    if(x*x>y*y) return false;
 }
 int main(){
 
@@ -47,7 +47,8 @@ int main(){
     v.push_back(15);
     sort(v.begin(),v.end(),cmp);
     for(auto i:v)
-    cout<<i<<" ";
+    cout<<i*i<<" ";
+
 
 /*int n;
 cout << "Enter the no of element";
